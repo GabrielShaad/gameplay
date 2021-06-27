@@ -4,18 +4,17 @@ import { theme } from "../../global/styles/theme";
 export const styles = StyleSheet.create({
   container: {
     width: "100%",
+    height: 56,
+    backgroundColor: theme.colors.primary,
+    borderRadius: 8,
     flexDirection: "row",
-    justifyContent: "space-between",
-    paddingHorizontal: 24,
+    alignItems: "center",
   },
   title: {
-    fontFamily: theme.fonts.title700,
+    flex: 1,
     color: theme.colors.heading,
-    fontSize: 18,
-  },
-  subtitle: {
-    fontFamily: theme.fonts.title700,
-    color: theme.colors.highlight,
-    fontSize: 13,
+    fontSize: 15,
+    textAlign: "center",
+    fontFamily: theme.fonts.text500,
   },
 });
